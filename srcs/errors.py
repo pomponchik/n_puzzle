@@ -1,0 +1,2 @@
+class FieldIsNotValidError(ValueError):
+    pass
