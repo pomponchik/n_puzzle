@@ -4,7 +4,7 @@ from srcs.goodbye import goodbye
 from srcs.reader import Reader
 from srcs.algorithm import Algorithm
 
-from srcs.heuristics import base_heuristic, manhattan, manhattan_plus
+from srcs.heuristics import base_heuristic, manhattan, manhattan_plus, all
 
 from srcs.errors import FieldIsNotValidError
 
@@ -21,6 +21,7 @@ def main():
         'base': base_heuristic,
         'manhattan': manhattan,
         'manhattan+': manhattan_plus,
+        'all': all,
     }
 
     if len(argv) == 2:

@@ -20,3 +20,6 @@ def manhattan(field):
 
 def manhattan_plus(field):
     return manhattan(field) * (field.generation_number + 1)
+
+def all(field):
+    return base_heuristic(field) + manhattan(field) * 2 + manhattan_plus(field)
