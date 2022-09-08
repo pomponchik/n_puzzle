@@ -44,7 +44,7 @@ def main():
         print(f'Number of moves: {result.generation_number}')
 
     except FieldIsNotValidError:
-        goodbye('This version of the puzzle is unsolvable.')
+        goodbye('This version of puzzle is unsolvable.')
 
 
 if __name__ == '__main__':
